@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waldos Grow</title>
+</head>
+
+<body class="container-fluid">
+    <header class="col-md-12 sticky-md-top bg-white header">
+        <!--Barra TopBar-->
+        <div class="row header__topBar">
+            <div class="d-flex flex-row-reverse bd-highlight">
+                <div class="p-2 bd-highlight"><a href="https://api.whatsapp.com/send?phone=+54154555555"
+                        target="_blanck"><img src="imagenes/whatsapp.png" alt="Whatsapp"></a></div>
+                <div class="p-2 bd-highlight"><a href="https://www.instagram.com/waldos.grow" target="_blanck"><img
+                            src="imagenes/instagram.png" alt="Instagram"></a></div>
+                <div class="p-2 bd-highlight"><a href="https://www.facebook.com/Waldos-grow-104212374628715/"
+                        target="_blanck"><img src="imagenes/facebook.png" alt="Facebook"></a></div>
+                <div class="p-2 bd-highlight"><a href="pages/faq.html" ; alt="Preguntas frecuentes">FAQ</a></div>
+                <div class="p-2 bd-highlight"><a href="pages/quienessomos.html">¿Quienes Somos?</a></div>
+                <div class="p-2 bd-highlight"><a href="pages/nuestrasmarcas.html">Nuestras Marcas</a></div>
+                <div class="screen__on">
+                    <input class="form-control-sm" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0 " type="submit">Search</button>
+                </div>
+            </div>
+        </div>
+        <div class="row header__topBar screen__off">
+            <!--Buscador responsive 360-->
+            <div class="flex-row-reverse bd-highlight screen__off" style="text-align: center;">
+                <input class="form-control-sm screen__off" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0 " type="submit">Search</button>
+            </div>
+        </div>
+        <div class="row header__main">
+            <!--Header Principal-->
+            <div class="col-md-2 " style="background-color: white;">
+                <a href="index.html"><img class="rounded mx-auto d-block" src="imagenes/logo.png" alt="Logo"></a>
+            </div>
+            <nav class="col-md-7">
+                <!--Menu Desplegable-->
+                <ul class="nav justify-content-center flex-wrap">
+                    <li class="nav-item ">
+                        <a class="nav-link text-secondary fs-5 text" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-secondary fs-5 text" data-bs-toggle="dropdown" href="#"
+                            role="button" aria-expanded="false">Productos</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="pages/productos.html">Todos</a></li>
+                            <li><a class="dropdown-item" href="pages/productos.html#recomendados">Recomendados</a></li>
+                            <li><a class="dropdown-item" href="pages/productos.html#masvendidos">Los más vendidos</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                                <!--Barra separadora-->
+                            </li>
+                            <li><a class="dropdown-item" href="pages/productos.html#accesorios">Accesorios</a></li>
+                            <li><a class="dropdown-item" href="pages/productos.html#aditivos">Aditivos</a></li>
+                            <li><a class="dropdown-item" href="pages/productos.html#iluminacion">Iluminación</a></li>
+                            <li><a class="dropdown-item" href="pages/productos.html#combos">Combos</a></li>
+                            <li><a class="dropdown-item" href="pages/productos.html#sustratos">Sustratos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary fs-5 text" href="pages/novedades.html">Novedades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary fs-5 text" href="pages/consejosinfo.html" tabindex="-1"
+                            aria-disabled="true">Consejos e Info</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="col-md-3 text-center">
+                <!--Boton Modales-->
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#contacto">
+                    Contacto
+                </button>
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#acceder">
+                    Acceder
+                </button>
+            </nav>
+        </div>
+        <div class="row">
+            <!--Breadcrumb-->
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                </ol>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!--Modal Boton Contacto-->
+        <div class="modal fade" id="contacto" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">INGRESA TUS DATOS</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" style="text-align: center;justify-items: space-evenly; ">
+                        <form class="formulario" action="">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput" required
+                                    placeholder="Nombre y Apellido">
+                                <label for="floatingInput">Nombre y Apellido</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput" required
+                                    placeholder="Correo electrónico">
+                                <label for="floatingInput">Correo electrónico</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Deseo recibir noticias y información.
+                                </label>
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+
+                            </div>
+                            <div><label>País de origen: </label>
+                                <select class="form-select" size="3" name="nacionalidad" required
+                                    aria-label="size 3 select example">
+                                    <option selected>Elige una opción</option>
+                                    <option value="argentina">Argentina</option>
+                                    <option value="brasil">Brasil</option>
+                                    <option value="bolivia">Bolivia</option>
+                                    <option value="Chile">Chile</option>
+                                    <option value="paraguay">Paraguay</option>
+                                    <option value="uruguay">Uruguay</option>
+                                    <option value="otros">Otros</option>
+                                </select>
+                            </div>
+                            <h6>Déjanos tu consulta</h6>
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Leave a comment here" style="height: 150px;"
+                                    id="floatingTextarea"></textarea>
+                                <label for="floatingTextarea">Escribe aquí...</label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Modal Boton Acceder-->
+        <div class="modal fade" id="acceder" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Acceder</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body row" style="display: flex;flex-wrap: nowrap;">
+                        <div>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Usuario</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div>
+                            </form>
+                            <div class="producto_text_chico" style="text-align: center;">
+                                <a href="pages/registro.html">¿No posees cuenta?</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success">Ingresar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="container-fluid">
+            <!--Banner Principal-->
+            <div class="row">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active banner" data-bs-interval="10000"
+                            style="background-image: url('imagenes/banner1.jpg');background-repeat: no-repeat;background-size: cover ">
+                            <div class="carousel-caption d-md-block text-dark ">
+                                <h2 class="display-5">GROW SHOP ONLINE</h2>
+                                <h4 class="display-6">Envios a todo el país</h4>
+                                <h5 class="banner_text">Todos los medio de pago</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item banner" data-bs-interval="2000"
+                            style="background-image: url('imagenes/banner2.jpg');background-repeat: no-repeat;background-size: cover ">
+                            <div class="carousel-caption d-md-block text-dark ">
+                                <h2 class=" display-5">PARA ESTA PRIMAVERA</h2>
+                                <h4 class=" display-6">Se vienen muchos sorteos</h4>
+                                <h5 class="banner_text">No te podes quedar afuera</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item banner"
+                            style="background-image: url('imagenes/banner3.jpg');background-repeat: no-repeat;background-size: cover">
+                            <div class="carousel-caption d-md-block text-dark">
+                                <h2 class="display-5">PRECIOS INSUPERABLES</h2>
+                                <h4 class="display-6">Consulta nuestros precios</h4>
+                                <h5 class="banner_text">Aceptamos todas las tajetas</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid ">
+            <!--Aside Categorias-->
+            <div class="row">
+                <nav class="col-md-3">
+                    <div class="categorias">
+                        <h4 class="categorias__text--titulo ">Categorias</h4>
+                        <hr style="width: 80%;">
+                        <ul>
+                            <li><a class="categorias__text--rubro "
+                                    href="pages/productos.html#accesorios">Accesorios</a>
+                                <ul>
+                                    <li><a class="categorias__text--item "
+                                            href="pages/productos.html#encendedores">Encendedores</a></li>
+                                    <li><a class="categorias__text--item "
+                                            href="pages/productos.html#vappers">Vappers</a></li>
+                                    <li><a class="categorias__text--item "
+                                            href="pages/productos.html#picadores">Picadores</a></li>
+                                    <li><a class="categorias__text--item " href="pages/productos.html#sedas">Sedas</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a class="categorias__text--rubro " href="pages/productos.html#aditivos">Aditivos</a>
+                                <ul>
+                                    <li><a class="categorias__text--item "
+                                            href="pages/productos.html#fertilizantes">Fertilizantes</a> </li>
+                                    <li><a class="categorias__text--item "
+                                            href="pages/productos.html#insecticidas">Insecticidas</a></li>
+                                    <li><a class="categorias__text--item "
+                                            href="pages/productos.html#aumentadores">Aumentadores</a> </li>
+                                </ul>
+                            </li>
+                            <li> <a class="categorias__text--rubro "
+                                    href="pages/productos.html#iluminacion">Iluminación</a>
+                                <ul>
+                                    <li><a class="categorias__text--item "
+                                            href="pages/productos.html#paneles">Paneles</a> </li>
+                                    <li><a class="categorias__text--item "
+                                            href="pages/productos.html#lamparas">Lámparas</a></li>
+                                    <li><a class="categorias__text--item "
+                                            href="pages/productos.html#balastos">Balastos</a> </li>
+                                    <li><a class="categorias__text--item " href="pages/productos.html#colbox">Colbox</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a class="categorias__text--rubro " href="pages/productos.html#combos">Combos</a></li>
+                            <li><a class="categorias__text--rubro" href="pages/productos.html#sustratos">Sustratos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="col-md-9 ">
+                    <!--Columnas de productos-->
+                    <div class="productos">
+                        <h4 class="productos__text--titulo">Ofertas y descuentos destacados!</h4>
+                        <div class="row ofertasArea">
+                            <div class="card productos " style="width: 13rem;">
+                                <img src="imagenes/productos/picador.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title productos__texto--grande">Picador</h5>
+                                    <p class="card-text productos__texto--chico">Esta es una pequeña descripcion del
+                                        producto.</p>
+                                    <a href="#" class="btn btn-secondary productos__text--button">Comprar</a>
+                                    <a href="#" class="btn btn-secondary productos__text--button">Agregar</a>
+                                </div>
+                            </div>
+                            <div class="card productos" style="width: 13rem;">
+                                <img src="imagenes/productos/sedas.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title productos__texto--grande">Seda</h5>
+                                    <p class="card-text productos__texto--chico">Esta es una pequeña descripcion del
+                                        producto.</p>
+                                    <a href="#" class="btn btn-secondary productos__text--button">Comprar</a>
+                                    <a href="#" class="btn btn-secondary productos__text--button">Agregar</a>
+                                </div>
+                            </div>
+                            <div class="card productos" style="width: 13rem;">
+                                <img src="imagenes/productos/sustrato1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title productos__texto--grande">Accesorio</h5>
+                                    <p class="card-text productos__texto--chico">Esta es una pequeña descripcion del
+                                        producto.</p>
+                                    <a href="#" class="btn btn-secondary productos__text--button">Comprar</a>
+                                    <a href="#" class="btn btn-secondary productos__text--button">Agregar</a>
+                                </div>
+                            </div>
+                            <div class="card productos" style="width: 13rem;">
+                                <img src="imagenes/productos/sustrato1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title productos__texto--grande">Sustrato</h5>
+                                    <p class="card-text productos__texto--chico">Esta es una pequeña descripcion del
+                                        producto.</p>
+
+                                    <div><a href="#" class="btn btn-secondary productos__text--button">Comprar</a>
+                                        <a href="#" class="btn btn-secondary productos__text--button">Agregar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="productos__text--titulo">Novedades del Mes!</h4>
+                        <div class="row ofertasArea">
+                            <div class="card productos" style="width: 13rem;">
+                                <img src="imagenes/productos/picador.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title productos__texto--grande">Picador</h5>
+                                    <p class="card-text productos__texto--chico">Esta es una pequeña descripcion del
+                                        producto.</p>
+                                    <a href="#" class="btn btn-secondary productos__text--button">Comprar</a>
+                                    <a href="#" class="btn btn-secondary productos__text--button">Agregar</a>
+                                </div>
+                            </div>
+                            <div class="card productos" style="width: 13rem;">
+                                <img src="imagenes/productos/sedas.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title productos__texto--grande">Seda</h5>
+                                    <p class="card-text productos__texto--chico">Esta es una pequeña descripcion del
+                                        producto.</p>
+                                    <a href="#" class="btn btn-secondary productos__text--button">Comprar</a>
+                                    <a href="#" class="btn btn-secondary productos__text--button">Agregar</a>
+                                </div>
+                            </div>
+                            <div class="card productos" style="width: 13rem;">
+                                <img src="imagenes/productos/sustrato1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title productos__texto--grande">Seda</h5>
+                                    <p class="card-text productos__texto--chico">Esta es una pequeña descripcion del
+                                        producto.</p>
+                                    <a href="#" class="btn btn-secondary productos__text--button">Comprar</a>
+                                    <a href="#" class="btn btn-secondary productos__text--button">Agregar</a>
+                                </div>
+                            </div>
+                            <div class="card productos" style="width: 13rem;">
+                                <img src="imagenes/productos/sustrato1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title productos__texto--grande">Sustrato</h5>
+                                    <p class="card-text productos__texto--chico">Esta es una pequeña descripcion del
+                                        producto.</p>
+                                    <a href="#" class="btn btn-secondary productos__text--button">Comprar</a>
+                                    <a href="#" class="btn btn-secondary productos__text--button">Agregar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="productos__text--titulo">Promociones</h4>
+                        <div class="row ofertasArea">
+                            <div class="card productos" style="width: 13rem;">
+                                <img src="imagenes/productos/sedas.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title productos__texto--grande">Seda</h5>
+                                    <p class="card-text productos__texto--chico">Esta es una pequeña descripcion del
+                                        producto.</p>
+                                    <a href="#" class="btn btn-secondary productos__text--button">Comprar</a>
+                                    <a href="#" class="btn btn-secondary productos__text--button">Agregar</a>
+                                </div>
+                            </div>
+                            <div class="card productos" style="width: 13rem;">
+                                <img src="imagenes/productos/sedas.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title productos__texto--grande">Seda</h5>
+                                    <p class="card-text productos__texto--chico">Esta es una pequeña descripcion del
+                                        producto.</p>
+                                    <a href="#" class="btn btn-secondary productos__text--button">Comprar</a>
+                                    <a href="#" class="btn btn-secondary productos__text--button">Agregar</a>
+                                </div>
+                            </div>
+                            <div class="card productos" style="width: 13rem;">
+                                <img src="imagenes/productos/sedas.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title productos__texto--grande">Accesorio</h5>
+                                    <p class="card-text productos__texto--chico">Esta es una pequeña descripcion del
+                                        producto.</p>
+                                    <a href="#" class="btn btn-secondary productos__text--button">Comprar</a>
+                                    <a href="#" class="btn btn-secondary productos__text--button">Agregar</a>
+                                </div>
+                            </div>
+                            <div class="card productos" style="width: 13rem;">
+                                <img src="imagenes/productos/sustrato1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title productos__texto--grande">Sustrato</h5>
+                                    <p class="card-text productos__texto--chico">Esta es una pequeña descripcion del
+                                        producto.</p>
+                                    <a href="#" class="btn btn-secondary productos__text--button">Comprar</a>
+                                    <a href="#" class="btn btn-secondary productos__text--button">Agregar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="row envio">
+            <!--Banner Garantia Envios-->
+            <div class="col-md-6">
+                <img width="40px" src="imagenes/envios.png" alt="Envios Seguros">
+                <h5 class="envio__text--titulo">ENVÍOS</h5>
+                <p class="envio__text--parrafo">Realizamos envíos a todo el país, mediante correo o encomienda.
+                    Todo se envía en cajas reforzadas y embaladas por nosotros
+                    mismos para cuidar cada producto.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <img width="40px" src="imagenes/garantia.png" alt="Garantia">
+                <h5 class="envio__text--titulo">GARANTÍA</h5>
+                <p class="envio__text--parrafo">Los materiales que utilizamos son de la más alta calidad,
+                    certificados y homologados. Por eso todos nuestros productos
+                    tienen garantía de fábrica, trabajamos con marcas como Italavia,
+                    Lumens, Zurich, etc., líderes en sus respectivos campos.
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer class="row footer">
+        <!--Footer-->
+        <div class="col-md-3 footer__logo">
+            <a href="index.html"><img class="footer__logo--img" src="imagenes/logo.png" alt="Logo"></a>
+        </div>
+        <div class="col-md-6 footer__contacto">
+            <h3 class="footer__contacto--titulo">Contáctanos</h3>
+            <p class="footer__contacto--parrafo">Ponemos a tu disposición múltiples canales de comunicación. Messenger,
+                WhatsApp, Email, teléfonos y Redes
+                Sociales.</p>
+            <div>
+                <a href="https://api.whatsapp.com/send?phone=+54154555555" target="_blanck"><img ;
+                        class="footer__contacto--redes" src="imagenes/whatsapp.png" alt="Whatsapp"></a>
+                <a href="https://www.instagram.com/waldos.grow" target="_blanck"><img class="footer__contacto--redes"
+                        src="imagenes/instagram.png" alt="Instagram"></a>
+                <a href="https://www.facebook.com/Waldos-grow-104212374628715/" target="_blanck"><img
+                        class="footer__contacto--redes" src="imagenes/facebook.png" alt="Facebook"></a>
+            </div>
+        </div>
+        <div class="col-md-3 footer__afip">
+            <a href=""><img class="footer__afip--img" src="imagenes/afip.jpg" alt=""> </a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+        integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
