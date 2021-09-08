@@ -197,7 +197,7 @@ main {
     padding: 5px;
     width: 150px; } }
 
-@media only screen and (min-width: 768px) and (max-width: 1300px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .screen__on {
     display: block; }
   .screen__off {
