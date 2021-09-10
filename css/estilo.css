@@ -38,6 +38,8 @@
   .banner .banner_text {
     font-size: 100%;
     z-index: 1000; }
+  .banner .banner_text--white {
+    color: white; }
 
 main {
   width: 100%; }
