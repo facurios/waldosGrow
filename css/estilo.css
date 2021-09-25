@@ -16,6 +16,11 @@
     text-decoration: none;
     margin-left: 10px; }
 
+.carrito {
+  margin-right: 20px; }
+  .carrito button {
+    width: 150px; }
+
 .header__main nav ul li a:hover {
   background-color: #54AC1C;
   border-radius: 5px;
@@ -43,10 +48,6 @@
 
 main {
   width: 100%; }
-  main h4::after {
-    height: 1px;
-    color: red;
-    font-weight: bold; }
 
 .categorias {
   padding-top: 40px;
@@ -119,6 +120,21 @@ main {
   margin: 20px 0 20px 0; }
   .marcas img {
     width: 170px; }
+
+.carrito {
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  flex-wrap: nowrap; }
+  .carrito .carrito__item {
+    align-items: center;
+    padding: 10px; }
+  .carrito .carrito img {
+    width: 40px; }
+  .carrito .carrito__total {
+    justify-content: end;
+    border-top: solid grey 1px;
+    margin-top: 10px; }
 
 .footer {
   background-color: grey; }
